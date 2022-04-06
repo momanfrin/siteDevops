@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#body { 
+    background-color: black;
+}
+
+#footer { 
+    color: white;
+    margin-top: 2rem; }

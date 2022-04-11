@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Área do Cliente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../plugins/bootstrap-5.0.2-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../plugins/bootstrap-5.0.2-dist/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../plugins/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../plugins/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+
+    <script src="../plugins/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</head>
+
+<body class="mt-5">
+
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md fixed-top border-bottom px-3 navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Formulário do Cliente</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 nav nav-pills pull-right">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="#scrollspyHeading1">Como podemos te ajudar?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" href="#scrollspyHeading2">Dados Pessoais</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-primary dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false"> Seu Fedback</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Sobre a Empresa</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Sobre Serviços</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="px-lg-5 bg-light ">
+        <div class="container-fluid px-md-5">
+            <div class="row">
+                <form action="" class="needs-validation" novalidate>
+                    <!-- <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" -->
+                    <div class="scrollspy-example" tabindex="0">
+                        <h4 class="mt-md-5 mt-4 mb-4" id="scrollspyHeading1">Serviço desejado</h4>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example" required>
+                                        <option disabled selected>Cique aqui para abrir a seleção</option>
+                                        <option value="1">Comercial</option>
+                                        <option value="2">Parceria</option>
+                                        <option value="3">Consultoria</option>
+                                        <option value="4">Outros</option>
+                                    </select>
+                                    <label for="floatingSelect">Assunto</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-md-0 mt-4">
+                                <label for="customRange2" class="form-label">Grau de urgência</label>
+                                <div class="d-flex">
+                                    Mín<input type="range" class="form-range px-2" min="0" max="2" id="customRange2">Max
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md">
+                                <div class="form-floating mb-md-3">
+                                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px"
+                                        required></textarea>
+                                    <label for="floatingTextarea2"> Olá! Explique aqui sobre a necessidade da sua
+                                        empresa...</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Para fazermos uma melhor avaliação do motivo de seu requerimento, explique a
+                                        necessidade de sua empresa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 id="scrollspyHeading2">Fixa de cadastro do cliente</h4>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="nomecompleto" oninput="validaNome(this)"
+                                        aria-describedby="validationServer03Feedback" required>
+                                    <label for="nomecompleto">Nome Completo</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um nome válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" required>
+                                    <label for="email">E-mail</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um e-mail válido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="dataNascimento"
+                                        onblur="validaDataNascimento(this)" required>
+                                    <label for="dataNascimento">Data de Nascimento</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, preencha sua Data de Nascimento corretamente. Somente maiores de 18
+                                        anos podem continuar o cadastro.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected></option>
+                                        <option value="1">Feminino</option>
+                                        <option value="2">Masculino</option>
+                                        <option value="3">Prefiro não especificar</option>
+                                    </select>
+                                    <label for="floatingSelect">Sexo</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, selecione uma opção.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="rg" required>
+                                    <label for="rg">RG</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um RG válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cpf" minlength="14" maxlength="14"
+                                        onkeyup="mascaraCpf(this)" oninput="validacaoCpf(this)" required>
+                                    <label for="cpf">CPF</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um CPF válido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" oninput="validacaoTelefone(this)"
+                                        id="telefone" onkeyup="mascaraTelefone(this)" minlength="10" maxlength="15"
+                                        required>
+                                    <label for="telefone">Telefone para contato</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um tefone para contato válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" oninput="validacaoTelefone(this)"
+                                        id="telefone2" onkeyup="mascaraTelefone(this)" minlength="10" maxlength="15">
+                                    <label for="telefone2">Telefone alternativo</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" pattern="^\d{5}-?\d{3}$" id="cep" name="cep"
+                                        onkeypress="mascaraCep(this, '#####-###')" maxlength="9"
+                                        onblur="pesquisacep(this.value);">
+                                    <label for="cep">CEP</label>
+                                    <div id="validationServer03Feedback" class="invalid-feedback">
+                                        Por favor, escreva um CEP válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="rua">
+                                    <label for="rua">Rua</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="numero">
+                                    <label for="numero">Número</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="complemento">
+                                    <label for="complemento">Complemento</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="bairro">
+                                    <label for="bairro">Bairro</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cidade">
+                                    <label for="cidade">Cidade</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-md-3">
+                                    <input type="text" class="form-control" id="estado">
+                                    <label for="estado">Estado</label>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 id="scrollspyHeading4">Sua Opinião é muito importante para nós</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Gostaria de deixar seu Elogio à IT
+                                        Lab?</label>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Escreva aqui sua Sugestão à IT Lab...</label>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mt-md-4 mb-md-4">
+                            <div class="col-md">
+                                <h4 id="scrollspyHeading5">Tem mais algum Serviço que gostaria que a IT Lab
+                                    tivesse
+                                    disponível?</h4>
+                                <p>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Se sim, escreva aqui!</label>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Confirmo que as informações acima são verdadeiras.
+                                </label>
+                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                    Por favor, confirme as informações.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md mb-md-5 mb-3">
+                            <div class="d-grid gap-2 col-sm-6 col-md-3">
+                                <button class="btn btn-primary" type="submit">Enviar formulário</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/telefone.js"></script>
+    <script src="../js/cpf.js"></script>
+    <script src="../js/endereco.js"></script>
+    <script src="../js/nome.js"></script>
+    <script src="../js/dataNascimento.js"></script>
+</body>
+
+</html>

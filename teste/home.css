@@ -7,3 +7,41 @@
 #footer { 
     color: white;
     margin-top: 2rem; }
+
+.imagem-container img {
+    height: 307px;
+    width: fit-content;
+    display: flex;
+    align-self: center;
+}
+
+.imagem-container {
+    display: flex;
+}
+
+.nav-centro {
+    padding: 0px 3px 10px 3px;
+}
+
+.pesquisa {
+    margin: 20px;
+    max-width: 200px;
+}
+
+.botao-pesquisa {
+    margin: 20px;
+}
+
+.opcoes {
+    margin: 20px;
+}
+
+.imgcarro {
+    height: 500px;
+}
+
+.carro {
+    margin: 100px;
+    margin-bottom: 100px;
+    color: #0d6efd;
+}

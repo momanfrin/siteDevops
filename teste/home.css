@@ -45,3 +45,29 @@
     margin-bottom: 100px;
     color: #0d6efd;
 }
+
+.section-produtos {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.produtos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cadastro {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.login {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}

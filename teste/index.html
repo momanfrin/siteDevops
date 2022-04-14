@@ -11,18 +11,22 @@
 
     <title>Leilão</title>
   </head>
+
   <body id="body">
-      <header>
-        
+
+      <header>       
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Leilão Online</a>
+              <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online</a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
+
                 <form class="d-flex">
                   <li class="nav-item">
                     <a class="nav-link" href="../teste/formlario.html" target="_blank">Cadastrar</a>
@@ -31,6 +35,7 @@
                     <a class="nav-link" href="../teste/login.html" target="_blank">Entrar</a>
                   </li>
                 </form>
+
               </div>
             </div>
         </nav>
@@ -39,21 +44,19 @@
             <div class="row justify-content-md">
                 <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck1" >Home</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck1" >Home</a>
                 
                     <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck2">Leilões Arrematados</a>
+                    <a class="btn btn-outline-primary opcoes" href="#arrematados"  for="btncheck2">Leilões Arrematados</a>
                 
                     <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck3">Perguntas Frequentes</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck3">Como Funciona</a>
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck1">Depoismentos</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck1">Comprar Lances</a>
                 
                     <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck2">Como Funciona</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck2">Participar de Leilões</a>
                 
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck3">Comprar Lances</a>
 
                     <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-primary botao-pesquisa" type="submit" >Search</button>
@@ -62,6 +65,8 @@
             </div>
         </div>
       </header>
+
+      <!-- carousel -->
 
     <section>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -110,17 +115,19 @@
     </div>
     </section>
     
-    <section class="section-produtos">
+    <!-- card dos produtos -->
+
+    <section id="arrematados" class="section-produtos">
         <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
             <div class="col">
               <div class="card h-100 imagem-container">
                 <img src="../teste/img/adega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Adega para até 8 garrafas</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Iniciou dia <br> 14/04/2022  13:00:00<br> <br> Finalizou dia <br> 14/04/2022  14:53:08</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Lance final: R$ 699,00</small>
                 </div>
               </div>
             </div>
@@ -129,10 +136,10 @@
                 <img src="../teste/img/anel.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Anel de  noivado</h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Iniciou dia <br> 03/04/2022  00:00:00<br> <br> Finalizou dia <br> 03/04/2022  14:46:23</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Lance final: R$ 1.587,84</small>
                 </div>
               </div>
             </div>
@@ -141,10 +148,10 @@
                 <img src="../teste/img/aspirador.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Aspirador de pó</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text">Iniciou dia <br> 28/03/2022  16:26:00<br> <br> Finalizou dia <br> 28/03/2022  19:00:39</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Lance final: R$: 78,25</small>
                 </div>
               </div>
             </div>
@@ -155,37 +162,13 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
             <div class="col">
               <div class="card h-100 imagem-container">
-                <img src="../teste/img/adega.jpg" class="card-img-top" alt="...">
+                <img src="../teste/img/poltrona.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Adega</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Poltrona de couro</h5>
+                  <p class="card-text">Iniciou dia <br> 16/04/2022  09:00:00<br> <br> Finalizou dia <br> 16/03/2022  09:53:00</p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 imagem-container">
-                <img src="../teste/img/anel.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Anel</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 imagem-container">
-                <img src="../teste/img/aspirador.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Aspitador</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                  <small class="text-muted">Lance final: R$: 364,89</small>
                 </div>
               </div>
             </div>
@@ -193,11 +176,27 @@
               <div class="card h-100 imagem-container">
                 <img src="../teste/img/tv.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Smart TV </h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Smart TV 75 CRYSTAL UHD</h5>
+                  <p class="card-text">Iniciou dia <br> 01/03/2022  23:00:00<br> <br> Finalizou dia <br> 01/03/2022  23:10:08</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Lance final: R$: 829,64</small>
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card h-100 imagem-container">
+                <img src="../teste/img/esteira.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Esteira Ergamétrica</h5>
+                  <p class="card-text">Iniciou dia <br> 17/02/2022  06:00:00<br> <br> Finalizou dia <br> 17/02/2022  08:00:22</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Lance final R$: 1.312,13</small>
+                </div>
+              </div>
+            </div>
+            
           </div>
     </section>
 

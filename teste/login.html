@@ -15,9 +15,9 @@
 
 </head>
 
-<body class="container-flex bg-dark p-4 cadastro">
+<body class="container-flex bg-dark p-4 cadastro-formulario">
     <header class="navbar navbar-dark bg-ldark" >
-        <div class="container-fluid">
+        <div class="container-fluid header-login">
           <h1 class="text-white text-center w-100">Login</h1>
         </div>
     </header>
@@ -30,28 +30,30 @@
             <div class="col-md-4">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="nome" placeholder="Username"  onblur="validaUsername(this)" required>
-                    <label for="floatingInput">Username</label>
+                    <label for="floatingInput">Usuário</label>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="form-floating mb-3">
                     <input type="password" class="form-control" id="floatingPassword"  maxlength="8" placeholder="password" required>
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">Senha</label>
                 </div>
             </div>
 
         </section>
 
         <!-- Botão -->
-        <div class="text-center p-5">
-            <button type="submit" class="btn btn-light btn-lg m-2">Cadastrar</button>
+        <div class="text-center p-5 botao-login">
+            <button type="submit" class="btn btn-light btn-lg m-2">Entrar</button>
         </div>
 
     </form>
 
+    <!-- Professor pediu site estático, por isso tiramos validações.js
+
     <script type="text/javascript" src="../teste/js/validaUsername.js"></script>
-    <script type="text/javascript" src="../teste/js/validaPassword.js"></script>
+    <script type="text/javascript" src="../teste/js/validaPassword.js"></script> -->
     
 
 </body>

@@ -15,139 +15,208 @@
 
 </head>
 
-<body class="container-flex bg-dark p-4 cadastro">
-    <header class="navbar navbar-dark bg-ldark" >
+<body class="container-flex bg-dark p-4">
+
+    <!-- Navbar -->
+    <header>       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online - Cadastro</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+    
+              </div>
+            </div>
+        </nav>
+    
         <div class="container-fluid">
-          <h1 class="text-white text-center w-100">Cadastro</h1>
+            <div class="row justify-content-md">
+                <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck1" >Home</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html"  for="btncheck2">Leilões Arrematados</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck3">Como Funciona</a>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1">Comprar Lances</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/login.html" target="_blank" for="btncheck2">Participar de Leilões</a>
+                
+    
+                    <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary botao-pesquisa" type="submit" >Search</button>
+    
+                </div>
+            </div>
         </div>
     </header>
 
-    <form class="container-fluid p-2">
-        
-        <!-- nome e empresa -->
-        <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Nome completo"  maxlength="50" onblur="validarNome(this)" required>
-                    <label for="floatingInput">Nome Completo</label>
-                </div>
-            </div>
+    <section class="cadastro">
+        <h1 class="dados-cadastro">Insira seus dados para cadastramento</h1>
 
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingPassword" placeholder="Empresa" required>
-                    <label for="floatingPassword">Empresa</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- e-mail e telefone -->
-        <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email </label>
-                </div>
-            </div>
-
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" id="Telefone" placeholder="telefone" onblur="validaTelefone(this)" required>
-                <label for="floatingInput">Telefone</label>
-                </div>
-            </div>           
-        </div>
-
-        <!-- cpf e data -->
-        <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="CPF" onblur=" verificarCPF(this.value)" required>
-                <label for="floatingInput">CPF</label>
-                </div>
-            </div>
-
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="nascimento" name="date" onblur="validaData(this)" required> 
-                    <label for=" date" class="form-label"></label>
-                </div>
-            </div>
-        </div>
-
-        <!-- username password -->
-        <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Username (letras/númetros/pontuação(_, . , _))"  onblur="validaUsername(this)" required>
-                    <label for="floatingInput">Username</label>
-                </div>
-            </div>
-
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword"  maxlength="8" placeholder="password" onblur="validaPassword(this)" required>
-                    <label for="floatingPassword">Password</label>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Logadouro 
-            no CEP usar onblur="pesquisacep(this.value)"-->
-        <div class="row g-2">
-            <div class="col-md-2">
-                <div class="form-floating mb-3">
-                <input class="form-control"  name="cep" type="text" id="cep" value="" size="10" maxlength="9" required>
-                <label for="floatingInput">CEP</label>
-                </div>
-            </div>
+        <form class="container-fluid p-2">
             
-            <div class="col-md-2">
-                <div class="form-floating mb-3">
-                <input type="text" class="form-control"  id="uf" required>
-                <label for="floatingInput">UF </label>
+            <!-- nome e empresa -->
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome completo"  maxlength="50" onblur="validarNome(this)" required>
+                        <label for="floatingInput">Nome Completo</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Empresa" required>
+                        <label for="floatingPassword">Empresa</label>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-2">
-                <div class="form-floating mb-3">
-                <input type="text" class="form-control"  id="localidade" required>
-                <label for="floatingInput">Cidade </label>
+            <!-- e-mail e telefone -->
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email </label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" id="Telefone" placeholder="telefone" onblur="validaTelefone(this)" required>
+                    <label for="floatingInput">Telefone</label>
+                    </div>
+                </div>           
+            </div>
+
+            <!-- cpf e data -->
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="CPF" onblur=" verificarCPF(this.value)" required>
+                    <label for="floatingInput">CPF</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="nascimento" name="date" onblur="validaData(this)" required> 
+                        <label for=" date" class="form-label"></label>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md">
-                <div class="form-floating mb-4">
-                <input type="email" class="form-control"  placeholder="telefone" name="rua" type="text" id="logradouro" size="60" required>
-                <label for="floatingInput">Logradouro</label>
+            <!-- username password -->
+            <div class="row g-2">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder="Username (letras/númetros/pontuação(_, . , _))"  onblur="validaUsername(this)" required>
+                        <label for="floatingInput">Username</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword"  maxlength="8" placeholder="password" onblur="validaPassword(this)" required>
+                        <label for="floatingPassword">Password</label>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-2">
-                <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="CPF" required>
-                <label for="floatingInput">Número</label>
+
+            <!-- Logadouro no CEP usar onblur="pesquisacep(this.value)"-->
+            <div class="row g-2">
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input class="form-control"  name="cep" type="text" id="cep" value="" size="10" maxlength="9" required>
+                    <label for="floatingInput">CEP</label>
+                    </div>
                 </div>
-            </div>
-            
-        </div>
+                
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  id="uf" required>
+                    <label for="floatingInput">UF </label>
+                    </div>
+                </div>
 
-          <!-- Descrição do projeto -->
-          <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating mb-3">
-                <!-- <input type="text" class="form-control" id="floatingInput" placeholder="Informações adicionais">
-                <label for="floatingInput">Informações adicionais</label>
-                </div> -->
-            </div>
-          </div>
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  id="localidade" required>
+                    <label for="floatingInput">Cidade </label>
+                    </div>
+                </div>
 
-          <!-- Botão -->
-        <div class="text-center p-5 cadastro-botao">
-            <button type="submit" class="btn btn-light btn-lg m-2">Cadastrar</button>
-        </div>
-    </form>
+                <div class="col-md">
+                    <div class="form-floating mb-4">
+                    <input type="email" class="form-control"  placeholder="telefone" name="rua" type="text" id="logradouro" size="60" required>
+                    <label for="floatingInput">Logradouro</label>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="CPF" required>
+                    <label for="floatingInput">Número</label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Dados bancários-->
+            <div class="row g-2">
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input class="form-control"  name="cep" type="text" id="cep" value="" size="10" maxlength="9" required>
+                    <label for="floatingInput">Banco</label>
+                    </div>
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  id="uf" required>
+                    <label for="floatingInput">Conta </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                    <input type="text" class="form-control"  id="localidade" required>
+                    <label for="floatingInput">Agência </label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword"  maxlength="8" placeholder="password" onblur="validaPassword(this)" required>
+                        <label for="floatingPassword">Referências Bancárias</label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Botão -->
+            <div class="text-center p-5 botao-login">
+                <a href="../teste/login.html" type="submit" class="btn btn-light btn-lg m-2">Cadastrar</a>
+            </div>
+        </form>
+
+    </section>
+
+    <footer id="footer">
+        <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
+    </footer>
 
     <!-- valida CPF/Tel/Cep -->
 

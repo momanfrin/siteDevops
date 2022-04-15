@@ -17,7 +17,7 @@
       <header>       
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online</a>
+              <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online - Home</a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
 
                 <form class="d-flex">
                   <li class="nav-item">
-                    <a class="nav-link" href="../teste/formlario.html" target="_blank">Cadastrar</a>
+                    <a class="btn btn-outline-primary" href="../teste/formlario.html" target="_blank">Cadastrar</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../teste/login.html" target="_blank">Entrar</a>
+                    <a class="btn btn-outline-primary" href="../teste/login.html" target="_blank">Entrar</a>
                   </li>
                 </form>
 
@@ -50,12 +50,12 @@
                     <a class="btn btn-outline-primary opcoes" href="#arrematados"  for="btncheck2">Leilões Arrematados</a>
                 
                     <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck3">Como Funciona</a>
+                    <a class="btn btn-outline-primary opcoes" href="#comoFunciona" for="btncheck3">Como Funciona</a>
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck1">Comprar Lances</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1">Comprar Lances</a>
                 
                     <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <a class="btn btn-outline-primary opcoes" href="../teste/formlario.html" target="_blank" for="btncheck2">Participar de Leilões</a>
+                    <a class="btn btn-outline-primary opcoes" href="../teste/login.html" target="_blank" for="btncheck2">Participar de Leilões</a>
                 
 
                     <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
@@ -200,20 +200,69 @@
           </div>
     </section>
 
-    <section class="section-produtos">
-      <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
-        <!-- cadastrar mais produtos -->
+    <section class="comoFunciona">
+
+      <h1 id="comoFunciona" class="como-funciona">Como Funciona</h1>
+      <div class="canvas">
+
+        <div>
+        <button  id="index-como-funciona" class="btn btn-outline-primary espaco" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Regras Gerais</button>
+        <button  id="index-como-funciona" class="btn btn-outline-primary espaco" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Vender Produtos</button>
+        <button  id="index-como-funciona" class="btn btn-outline-primary espaco" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Comprar Produtos</button>
+        </div>
+
+        <div class="corpo-canvas">
+
+          <div class="offcanvas offcanvas-start corpo-canvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header corpo-canvas">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Regras Gerais</h5>
+              <button type="button"class="btn-close text-reset btn btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body corpo-canvas">
+              <p>Na modalidade de leilões Online é necessário adquirir pacotes de lances ofertados em nosso site na aba <a href="../teste/comprarLance.html" target="blank"> Comprar Lances</a>. Com esses lances o usuário, devidamente cadastrado poderá participar da compra ou venda de produtos,<br> atentando-se ao dia e aos horários de abertura e fechamento dos leilões desejados.<br> Durante o leilão, nossa equipe estará à disposição, para dar o suporte necessário a nossos clientes e, ao término, entra em contato com os arrematantes, dando assistência pós-leilão com os procedimentos para finalização e pagamento dos lotes arrematados.</p>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start corpo-canvas" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header corpo-canvas">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Vender Produtos</h5>
+              <button type="button" class="btn-close text-reset btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body corpo-canvas">
+              <p>Para vender seuproduto em nossos leilões você deve se cadastrar emnosso site na aba <a href="../teste/formlario.html" target="blank"> Cadastrar</a>. 
+                Confirmado o cadastro o usuário poderá anexar informações sobre o produto que deseja oferar como,lance mínimo e data de início do leilão, por exemlo.<br>
+                Nossa equipe estará à disposição, para dar o suporte necessário a nossos clientes antes, durante e após o leilão.</p>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start corpo-canvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header corpo-canvas">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Comprar Produtos</h5>
+              <button type="button" class="btn-close text-reset btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body corpo-canvas">
+              <p>Na modalidade de leilões Online é necessário adquirir pacotes de lances ofertados em nosso site na aba <a href="../teste/comprarLance.html" target="blank"> Comprar Lances</a>. Com esses lances o usuário, devidamente cadastrado poderá participar da compra  de produtos, atentando-se ao dia e aos horários de abertura e fechamento dos leilões desejados.<br> Durante o leilão, nossa equipe estará à disposição, para dar o suporte necessário a nossos clientes e, ao término, entra em contato com os arrematantes, dando assistência pós-leilão com os procedimentos para finalização e pagamento dos lotes arrematados.</p>
+            </div>
+            
+          </div>
+
+        </div>
+
       </div>
+
     </section>
-
-
-    
+ 
     <footer id="footer">
       <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
     </footer>
+
+    <!-- scripts para operação do bootstrap -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
   </body>
 </html>

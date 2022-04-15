@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../teste/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="container-flex bg-dark p-4">
+
+    <!-- Navbar -->
+    <header>       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online - Compra/Venda/Lances</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+    
+              </div>
+            </div>
+        </nav>
+    
+        <div class="container-fluid">
+            <div class="row justify-content-md">
+                <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck1" >Home</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html"  for="btncheck2">Leilões Arrematados</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck3">Como Funciona</a>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1">Comprar Lances</a>
+                
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <a class="btn btn-outline-primary opcoes" href="../teste/leilaoProdutos.html" target="_blank" for="btncheck2">Participar de Leilões</a>
+                
+    
+                    <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary botao-pesquisa" type="submit" >Search</button>
+    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="arrematados" class="section-produtos">
+      <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Adega para até 8 garrafas</h5>
+                <p class="card-text">Iniciou dia <br> 14/04/2022  13:00:00<br> <br> Finalizou dia <br> 14/04/2022  14:53:08</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final: R$ 699,00</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/anel.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anel de  noivado</h5>
+                <p class="card-text">Iniciou dia <br> 03/04/2022  00:00:00<br> <br> Finalizou dia <br> 03/04/2022  14:46:23</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final: R$ 1.587,84</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/aspirador.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aspirador de pó</h5>
+                <p class="card-text">Iniciou dia <br> 28/03/2022  16:26:00<br> <br> Finalizou dia <br> 28/03/2022  19:00:39</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final: R$: 78,25</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section-produtos">
+      <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/poltrona.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Poltrona de couro</h5>
+                <p class="card-text">Iniciou dia <br> 16/04/2022  09:00:00<br> <br> Finalizou dia <br> 16/03/2022  09:53:00</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final: R$: 364,89</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/tv.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smart TV 75 CRYSTAL UHD</h5>
+                <p class="card-text">Iniciou dia <br> 01/03/2022  23:00:00<br> <br> Finalizou dia <br> 01/03/2022  23:10:08</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final: R$: 829,64</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 imagem-container">
+              <img src="../teste/img/esteira.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Esteira Ergamétrica</h5>
+                <p class="card-text">Iniciou dia <br> 17/02/2022  06:00:00<br> <br> Finalizou dia <br> 17/02/2022  08:00:22</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Lance final R$: 1.312,13</small>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Cadastrar Produtos</h5>
+            <p class="card-text">Descrição do produto</p>
+            <a href="" class="btn btn-primary">Anunciar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Cadastrar Produtos</h5>
+            <p class="card-text">Descrição do produto</p>
+            <a href="" class="btn btn-primary">Anunciar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer">
+        <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
+    </footer>
+
+</body>
+</html>

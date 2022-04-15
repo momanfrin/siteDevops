@@ -15,6 +15,51 @@
 
 </head>
 
+<!-- Navbar -->
+
+<header>  
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online - Entar</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>           
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-md">
+            <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck1" >Home</a>
+            
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck2">Leilões Arrematados</a>
+            
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck3">Como Funciona</a>
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1">Comprar Lances</a>
+            
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/login.html" target="_blank" for="btncheck2">Participar de Leilões</a>
+            
+
+                <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary botao-pesquisa" type="submit" >Search</button>
+
+            </div>
+        </div>
+    </div>
+  </header>
+
 <body class="container-flex bg-dark p-4 cadastro-formulario">
     <header class="navbar navbar-dark bg-ldark" >
         <div class="container-fluid header-login">
@@ -44,11 +89,16 @@
         </section>
 
         <!-- Botão -->
-        <div class="text-center p-5 botao-login">
-            <button type="submit" class="btn btn-light btn-lg m-2">Entrar</button>
+        <div class="text-center p-5 botao-login-l">
+            <a href="../teste/leilaoProdutos.html" type="submit" class="btn btn-light btn-lg m-2">Entrar</a>
         </div>
 
     </form>
+
+
+    <footer id="footer">
+        <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
+    </footer>
 
     <!-- Professor pediu site estático, por isso tiramos validações.js
 

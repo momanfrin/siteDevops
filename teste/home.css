@@ -62,6 +62,7 @@
 .cadastro {
     margin-left: 200px;
     margin-right: 200px;
+    margin-top: 2rem;
 }
 
 .login {
@@ -71,11 +72,12 @@
     align-items: baseline;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .cadastro-formulario {
     margin-bottom: 2rem;
+    margin-top: -2rem;
 }
 
 .cadastro-botao {
@@ -91,6 +93,9 @@
     margin-top: 0rem;
 }
 
+.botao-login-l {
+    margin-top: 0rem;
+}
 .titulo {
     
     font-family: inherit;
@@ -100,4 +105,61 @@
 
 .section-produtos {
     text-align: center;
+}
+
+.dados-cadastro {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.comoFunciona {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+.como-funciona {
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.canvas {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 5rem;
+}
+
+.espaco {
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.corpo-canvas {
+    background-color: black;
+    color: white;
+}
+
+.fechar {
+    color: white;
+}
+
+.pacotes-lances-leiloes {
+    color: white;
+    text-align: center;
+}
+
+.pagina-lances {
+    background-color: black;
+}
+
+#index-como-funciona {
+    padding: 4rem;
 }

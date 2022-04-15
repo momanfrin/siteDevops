@@ -86,7 +86,7 @@
 
 .header-login {
     margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .botao-login {
@@ -177,4 +177,50 @@
 
 .produto-para-leiloar {
     color: white;
+}
+
+.link-pergunta {
+    color: #0d6efd;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.cadastrar-entrar {
+    margin-right: 1.5rem;
+}
+
+.valor-lance-produto {
+    margin-top: 0.5rem;
+}
+
+.img-comprar-pacote {
+    height: 10rem;
+    width: fit-content;
+    display: flex;
+    align-self: center;
+}
+
+.comprando-pacotes {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-pacote{
+    margin-top: -10rem;
+    padding-top: -10rem;
+}
+
+#vaca {
+    max-width: 279px;
+    /* max-width: 17rem; */
+    max-height: 10rem;
+}
+
+#gato {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    max-width: 17rem;
+    max-height: 12rem;
 }

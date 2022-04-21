@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  
 
 </head>
 
@@ -219,7 +220,7 @@
             <div class="card-body">
 
               <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Nome do  Item</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
               <div class="form-floating mb-3">
@@ -247,7 +248,50 @@
 
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-primary comprar">Cadastrar item para leilão</a>
+              <h5>estou aqui</h5>
+              <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+              <script type="text/javascript" src="./js/postItem.js"></script>
+
+            </div>             
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 imagem-container">
+            <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text " id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
+                <input id="teste-nome" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="nascimento" name="date"> 
+                        <label for=" date" class="form-label">Data de início</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="date" class="form-control" id="nascimento" name="date"> 
+                      <label for=" date" class="form-label">Data de término</label>
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Lance inicial</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+
+                  
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Escolha uma foto do produto</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+
+            </div>
+            <div class="card-footer">
+              <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+              <script type="text/javascript" src="./js/postItem.js"></script>
             </div>
           </div>
         </div>
@@ -258,9 +302,11 @@
             <div class="card-body">
 
               <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Nome do  Item</span>
+                <h5>Aqui</h5>
+                <span onchange=getProduct() class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
+              <script src="./js/getProductName.js"></script>
               <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="nascimento" name="date"> 
                         <label for=" date" class="form-label">Data de início</label>
@@ -286,46 +332,8 @@
 
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-primary comprar">Cadastrar item para leilão</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 imagem-container">
-            <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-
-              <div class="input-group input-group-sm mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Nome do  Item</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-              </div>
-              <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="nascimento" name="date"> 
-                        <label for=" date" class="form-label">Data de início</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="date" class="form-control" id="nascimento" name="date"> 
-                      <label for=" date" class="form-label">Data de término</label>
-                  </div>
-                  <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Lance inicial</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                  <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-
-                  
-              <div class="mb-3">
-                <label for="formFile" class="form-label">Escolha uma foto do produto</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
-
-            </div>
-            <div class="card-footer">
-              <a href="" class="btn btn-primary comprar">Cadastrar item para leilão</a>
+              <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+              <script type="text/javascript" src="./js/postItem.js"></script>
             </div>
           </div>
         </div>
@@ -337,6 +345,8 @@
     <footer id="footer">
         <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
     </footer>
+
+    
 
 </body>
 </html>

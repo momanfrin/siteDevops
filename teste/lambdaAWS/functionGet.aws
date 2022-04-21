@@ -1,0 +1,19 @@
+import json
+import boto3
+from boto3.dynamodb.conditions import Key
+
+dynamodb = boto3.resource('dynamodb')
+
+table = dynamodb.Table('LeilaoOnline')
+
+
+def lambda_handler(event, context):
+    item = event["nome"]
+    response = table.query(
+        KeyConditionExpression=Key('nome').eq(item)
+        )
+    return {
+    'statusCode': 200,
+    'body': json.dumps(f" O item pego foi {response} e seu valor é de {response}")
+        
+    }

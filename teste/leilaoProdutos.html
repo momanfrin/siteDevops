@@ -63,7 +63,7 @@
     </header>
 
     <section id="arrematados" class="section-produtos">
-      <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
+      <div class="row row-cols-1 row-cols-md-3 g-4 produtos" id="arrematadosRow">
 
           <div class="col">
             <div class="card h-100 imagem-container img">
@@ -221,7 +221,7 @@
 
               <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input id="nomeDoItem" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
               <div class="form-floating mb-3">
                         <input type="date" class="form-control" id="nascimento" name="date"> 
@@ -237,7 +237,7 @@
                   </div>
                   <div class="input-group input-group-sm mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input id="lanceMinimo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                   </div>
 
                   
@@ -303,7 +303,7 @@
 
               <div class="input-group input-group-sm mb-3">
                 <h5>Aqui</h5>
-                <span onchange=getProduct() class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
+                <span  class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
               </div>
               <script src="./js/getProductName.js"></script>

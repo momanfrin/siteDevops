@@ -37,19 +37,21 @@
     <div class="container-fluid">
         <div class="row justify-content-md">
             <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck1" >Home</a>
-            
+                
                 <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" for="btncheck2">Leilões Arrematados</a>
+                <a class="btn btn-outline-primary opcoes" href="#arrematados"  for="btncheck2">Leilões Arrematados</a>
             
                 <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck3">Como Funciona</a>
+                <a class="btn btn-outline-primary opcoes" href="#comoFunciona" for="btncheck3">Como Funciona</a>
+                
                 <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1">Comprar Lances</a>
+                <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1" >Comprar Lances</a>
+
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <a class="btn btn-outline-primary opcoes" href="../teste/login.html"  for="btncheck2">Cadastrar Produtos</a>
             
                 <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/login.html" for="btncheck2">Participar de Leilões</a>
+                <a class="btn btn-outline-primary opcoes" href="../teste/login.html"  for="btncheck2">Participar de Leilões</a>
             
 
                 <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
@@ -60,7 +62,9 @@
     </div>
 </head>
 
-<body class="container-flex bg-dark p-4 cadastro-formulario">
+<script src="../teste/js/validaUsuarioCookie.js"></script>
+
+<body onload="shUser()" class="container-flex bg-dark p-4 cadastro-formulario">
     <header class="navbar navbar-dark bg-ldark" >
         <div class="container-fluid header-login">
           <h1 class="text-white text-center w-100">Login</h1>
@@ -74,8 +78,13 @@
 
             <div class="col-md-4">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Username"  onblur="validaUsername(this)" required>
-                    <label for="floatingInput">Usuário</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Username"  required>
+                    <label for="floatingInput user">Autenticação</label>
+
+                    <!-- autentificando usuário -->
+                    <button type="button" onclick=getUser() >Verificar Autenticação</button>
+                    <script src="../teste/js/validaUsuarioCookie.js"></script>
+
                 </div>
             </div>
 
@@ -88,6 +97,7 @@
 
         </section>
 
+        <!-- tags de esqueceu a senha e não é cadastrado -->
         <section class="link-pergunta">
 
             <a>Esqueceu sua senha?<br></a>
@@ -97,7 +107,9 @@
 
         <!-- Botão -->
         <div class="text-center p-5 botao-login-l">
-            <a href="../teste/leilaoProdutos.html" type="submit" class="btn btn-light btn-lg m-2">Entrar</a>
+            <button type="button" onclick="vaiP3()">Entrar</button>
+            <script src="../teste/js/validaUsuarioCookie.js"></script>
+
         </div>
 
     </form>
@@ -106,7 +118,8 @@
     <footer id="footer">
         <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
     </footer>
-
+    
+    <script src="../teste/js/validaUsuarioCookie.js"></script>
     <!-- Professor pediu site estático, por isso tiramos validações.js
 
     <script type="text/javascript" src="../teste/js/validaUsername.js"></script>

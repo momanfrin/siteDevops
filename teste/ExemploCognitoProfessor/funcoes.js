@@ -1,14 +1,18 @@
+function vaiP1() { window.location.href = "../testeAws/pag1.html"; }
+function vaiP2() { window.location.href = "../testeAws/pag2.html"; }
+function vaiP3() {
+  if( getUser() != "" ) window.location.href = "../testeAws/pag3.html";
+  else document.getElementById( "saida" ).innerHTML = "acesso proibido";
+}
+function vaiP4() {
+  if( getUser() != "" ) window.location.href = "../testeAws/pag4.html";
+  else document.getElementById( "saida" ).innerHTML = "acesso proibido";
+}
 
-// function vaiP4() {
-//   if( getUser() != "" ) window.location.href = "../leilaoProdutos.html";
-//   else document.getElementById( "saida" ).innerHTML = "acesso proibido";
-// }
-
-// function shUser() { // Exibe os valores de "username" e "expires" no cookie
-//   let c = "username: " + getUser() + " - expires: " + getExpires();
-//   document.getElementById( "saida" ).innerHTML = c;
-// }
-
+function shUser() { // Exibe os valores de "username" e "expires" no cookie
+  let c = "username: " + getUser() + " - expires: " + getExpires();
+  document.getElementById( "saida" ).innerHTML = c;
+}
 
 function setUser() { // Cria o cookie com as chaves "username" e expires
   let userid = "username=" + document.getElementById( "user" ).value;
@@ -41,4 +45,3 @@ function getExpires() { // Procura o valor da chave "expires" no cookie
 
   return ""; // Não tem "expires=" no cookie
 }
-

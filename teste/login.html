@@ -64,7 +64,7 @@
 
 <script src="../teste/js/validaUsuarioCookie.js"></script>
 
-<body onload="shUser()" class="container-flex bg-dark p-4 cadastro-formulario">
+<body class="container-flex bg-dark p-4 cadastro-formulario">
     <header class="navbar navbar-dark bg-ldark" >
         <div class="container-fluid header-login">
           <h1 class="text-white text-center w-100">Login</h1>
@@ -78,11 +78,11 @@
 
             <div class="col-md-4">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Username"  required>
-                    <label for="floatingInput user">Autenticação</label>
+                    <input type="text" class="form-control" id="user" placeholder="Username"  required>
+                    <label  for="user">Autenticação</label>
 
                     <!-- autentificando usuário -->
-                    <button type="button" onclick=getUser() >Verificar Autenticação</button>
+                    <button type="button" onclick="setUser()" >Verificar Autenticação</button>
                     <script src="../teste/js/validaUsuarioCookie.js"></script>
 
                 </div>
@@ -107,7 +107,7 @@
 
         <!-- Botão -->
         <div class="text-center p-5 botao-login-l">
-            <button type="button" onclick="vaiP3()">Entrar</button>
+            <button type="button" onclick="getUser()">Entrar</button>
             <script src="../teste/js/validaUsuarioCookie.js"></script>
 
         </div>

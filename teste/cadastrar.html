@@ -60,7 +60,7 @@
   
         <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
   
-          <div class="col">
+          <div  id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -94,15 +94,15 @@
   
               </div>
               <div class="card-footer">
-                <h5>estou aqui</h5>
-                <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
-  
+                <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <script type="text/javascript" src="./js/createcard.js"></script>  
               </div>             
             </div>
           </div>
   
-          <div class="col">
+          <div id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -136,19 +136,20 @@
   
               </div>
               <div class="card-footer">
-                <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
+                <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <script type="text/javascript" src="./js/createcard.js"></script> 
               </div>
             </div>
           </div>
   
-          <div class="col">
+          <div id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
               <div class="card-body">
   
-                <div class="input-group input-group-sm mb-3">
-                  <h5>Aqui</h5>
+                <div class="input-group input-group-sm mb-3" >
                   <span  class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
                   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
@@ -178,8 +179,10 @@
   
               </div>
               <div class="card-footer">
-                <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
+                <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <script type="text/javascript" src="./js/createcard.js"></script> 
               </div>
             </div>
           </div>
@@ -191,7 +194,7 @@
       <footer id="footer">
           <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
       </footer>
-  
+      
       
   
   </body>

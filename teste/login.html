@@ -17,11 +17,10 @@
 
 <!-- Navbar -->
 
-<head>  
-
+<header>       
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online - Entar</a>
+          <a class="navbar-brand titulo" href="../teste/index.html">Leilão Online -Login</a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,7 +28,7 @@
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>           
+            </ul>
           </div>
         </div>
     </nav>
@@ -39,20 +38,13 @@
             <div class="btn-group btn-dark nav-centro" role="group" aria-label="Basic checkbox toggle button group" >
                 
                 <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="#arrematados"  for="btncheck2">Leilões Arrematados</a>
+                <a class="btn btn-outline-primary opcoes" href="../teste/index.html"  target="_blank" for="btncheck2">Leilões Arrematados</a>
             
                 <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="#comoFunciona" for="btncheck3">Como Funciona</a>
+                <a class="btn btn-outline-primary opcoes" href="../teste/index.html" target="_blank" for="btncheck3">Como Funciona</a>
                 
                 <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
                 <a class="btn btn-outline-primary opcoes" href="../teste/comprarLance.html" target="_blank" for="btncheck1" >Comprar Lances</a>
-
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/login.html"  for="btncheck2">Cadastrar Produtos</a>
-            
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <a class="btn btn-outline-primary opcoes" href="../teste/login.html"  for="btncheck2">Participar de Leilões</a>
-            
 
                 <input class="form-control me-2 pesquisa" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-primary botao-pesquisa" type="submit" >Search</button>
@@ -60,7 +52,7 @@
             </div>
         </div>
     </div>
-</head>
+</header>
 
 <script src="../teste/js/validaUsuarioCookie.js"></script>
 
@@ -79,19 +71,12 @@
             <div class="col-md-4">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="user" placeholder="Username"  required>
-                    <label  for="user">Autenticação</label>
+                    <label for="user">Autenticação</label>
 
                     <!-- autentificando usuário -->
-                    <button type="button" onclick="setUser()" >Verificar Autenticação</button>
+                    <button type="button" onclick="setUser()" id="verificar">Verificar Autenticação</button>
                     <script src="../teste/js/validaUsuarioCookie.js"></script>
 
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword"  maxlength="8" placeholder="password" required>
-                    <label for="floatingPassword">Senha</label>
                 </div>
             </div>
 
@@ -107,8 +92,9 @@
 
         <!-- Botão -->
         <div class="text-center p-5 botao-login-l">
-            <button type="button" onclick="getUser()">Entrar</button>
+
             <script src="../teste/js/validaUsuarioCookie.js"></script>
+            <a href="../teste/leilaoProdutos.html">Entrar</a>
 
         </div>
 
@@ -119,12 +105,7 @@
         <p class="copyright" style="text-align: center;">&copy; Alunos Faculdade Impacta </p>
     </footer>
     
-    <script src="../teste/js/validaUsuarioCookie.js"></script>
-    <!-- Professor pediu site estático, por isso tiramos validações.js -->
-
-    <script type="text/javascript" src="../teste/js/validaUsername.js"></script>
-    <script type="text/javascript" src="../teste/js/validaPassword.js"></script>
-    
+    <script src="../teste/js/validaUsuarioCookie.js"></script>    
 
 </body>
 </html>

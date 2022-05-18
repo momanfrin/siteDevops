@@ -19,7 +19,7 @@ function setUser() { // Cria o cookie com as chaves "username" e expires
 
   let c  = userid + ";" + expires + ";path=/";
   document.cookie = c;
-  document.getElementById( "saida" ).innerHTML = "cookie enviado: " + c;
+  document.getElementById( "verificar" ).innerHTML = "cookie enviado: " + c;
 }
 
 function getUser() { // Procura o valor da chave "username" no cookie

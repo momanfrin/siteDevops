@@ -1,3 +1,22 @@
+window.mascaraCpf = function (elemento) {
+
+    let numCpf = elemento.value.replace(/\D/gi, '');
+    let numCpfList = numCpf.split('');
+
+    if (numCpf.length >= 4) {
+        numCpfList.splice(3, 0, '.');
+    }
+    if (numCpf.length >= 7) {
+        numCpfList.splice(7, 0, '.');
+    }
+    if (numCpf.length >= 10) {
+        numCpfList.splice(11, 0, '-');
+    }
+
+    elemento.value = numCpfList.join('');
+}
+
+
 function verificarCPF(c){
     var i;
     s = c;
@@ -34,7 +53,7 @@ function verificarCPF(c){
         return false;
     }
     if (!v) {
-        alert(c + "CPF Válido")
+   
     }
 }
 

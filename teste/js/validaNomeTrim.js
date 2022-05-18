@@ -22,7 +22,25 @@ function validar(nomeCompleto) {
 }
 
 function validarNome(nomeCompleto) {
-  if (validar(nomeCompleto) == false){
-    alert('Digite um nome válido');
+  if (validar(nomeCompleto) === false){
+    mensagemErroNome(nomeCompleto);
+    // alert("Nome possui caracteres inválidos ou é vazio")
+  // <label for="floatingInputInvalid">Invalid input</label>
   }
+  else {
+    removeMensagemErroNome(elementoNome);
+        }
+}
+
+
+function mensagemErroNome(nomeCompleto){
+  nomeCompleto.classList.add('is-invalid');
+  nomeCompleto.classList.add('invalid');
+  nomeCompleto.setCustomValidity("Erro");
+}
+
+function removeMensagemErroNome(nomeCompleto){
+  nomeCompleto.classList.remove('is-invalid');
+  nomeCompleto.classList.remove('invalid');
+  nomeCompleto.setCustomValidity("");
 }

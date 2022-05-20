@@ -1,5 +1,5 @@
 async function postItem() {
-    let nomeItem = document.getElementById('valorDoItem').value;
+  let nomeItem = document.getElementById('valorDoItem').value;
    
     let objeto = {'nome': nomeItem};
     let data = {"nome" : nomeItem, "valor": JSON.stringify(objeto)};

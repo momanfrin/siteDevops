@@ -53,18 +53,17 @@
     <!-- Produtos le leilão em andamento -->
 
     <section id="arrematados andamento" class="section-produtos">
-      <div class="row row-cols-1 row-cols-md-3 g-4 produtos" id="arrematadosRow">
+      <div class="row row-cols-1 row-cols-md-4 g-4 produtos" id="arrematadosRow">
 
           <div class="col">
             <div class="card h-100 imagem-container img">
-
-              <img id="gato" src="../teste/img/gatinho.jpg" class="card-img-top" alt="...">
+              <img id="gato" src="../teste/img/anel.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Gatinho Fofo</h5>
-                <p class="card-text">Iniciou dia <br> 15/04/2022  15:49:00<br> <br> Finaliza dia <br> ----- </p>
-                <h5>Lance inicial: Não compre animais!</h5>
-                <h5>Lance final: Adote!</h5>
-                <h5>Lance atual: sua consciência!</h5>
+                <h5 id="nomeDoItem" class="card-title">Anel de Diamante</h5>
+                <p class="card-text">Iniciou dia <br> 18/04/2022  19:00:00<br> <br> Finaliza dia <br> 18/05/2022  19:00:00 </p>
+                <h5>Lance inicial: 49.000 </h5>
+                <h5>Lance final: em aberto </h5>
+                <h5>Lance atual: 54.657,23 </h5>
               </div>
 
               <div class="card-footer">
@@ -80,9 +79,9 @@
           <div class="col">
 
             <div class="card h-100 imagem-container img">
-              <img id="vaca" src="../teste/img/prada.jpg" class="card-img-top" alt="...">
+              <img id="gato" src="../teste/img/prada.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Bolsa Prada</h5>
+                <h5 id="nomeDoItem" class="card-title">Bolsa Prada</h5>
                 <p class="card-text">Iniciou dia <br> 18/04/2022  19:00:00<br> <br> Finaliza dia <br> 18/05/2022  19:00:00 </p>
                 <h5>Lance inicial: 23.000 </h5>
                 <h5>Lance final: em aberto </h5>
@@ -92,7 +91,7 @@
               <div class="card-footer">
                 <a href="" class="btn btn-primary comprar">Dar um lance</a>
                 <div class="input-group mb-3 valor-lance-produto">
-                  <button class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
                   <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
               </div>
@@ -104,7 +103,7 @@
 
               <img id="vaca" src="../teste/img/fusca.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Carro antigo - Fusca</h5>
+                <h5 id="nomeDoItem" class="card-title">Carro antigo - Fusca</h5>
                 <p class="card-text">Iniciou dia <br> 30/04/2022  08:30:00<br> <br> Finaliza dia <br> 08/06/2022  22:40:00 </p>
                 <h5>Lance inicial: 5.000,00</h5>
                 <h5>Lance final: em aberto</h5>
@@ -114,7 +113,29 @@
               <div class="card-footer">
                 <a href="" class="btn btn-primary comprar">Dar um lance</a>
                 <div class="input-group mb-3 valor-lance-produto">
-                  <button class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+
+            <div class="card h-100 imagem-container img">
+              <img id="vaca" src="../teste/img/chanel.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nomeDoItem" class="card-title">Bolsa Chanel</h5>
+                <p class="card-text">Iniciou dia <br> 18/04/2022  19:00:00<br> <br> Finaliza dia <br> 18/05/2022  19:00:00 </p>
+                <h5>Lance inicial: 49.000 </h5>
+                <h5>Lance final: em aberto </h5>
+                <h5>Lance atual: 54.657,23 </h5>
+              </div>
+
+              <div class="card-footer">
+                <a href="" class="btn btn-primary comprar">Dar um lance</a>
+                <div class="input-group mb-3 valor-lance-produto">
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
                   <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
               </div>
@@ -125,7 +146,7 @@
 
     </section>
 
-    <section class="section-produtos">
+    <!-- <section class="section-produtos">
 
       <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
 
@@ -144,7 +165,7 @@
               <div class="card-footer">
                 <a href="" class="btn btn-primary comprar">Dar um lance</a>
                 <div class="input-group mb-3 valor-lance-produto">
-                  <button class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
                   <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
               </div>
@@ -166,7 +187,7 @@
               <div class="card-footer">
                 <a href="" class="btn btn-primary comprar">Dar um lance</a>
                 <div class="input-group mb-3 valor-lance-produto">
-                  <button class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
                   <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
               </div>
@@ -188,7 +209,7 @@
               <div class="card-footer">
                 <a href="" class="btn btn-primary comprar">Dar um lance</a>
                 <div class="input-group mb-3 valor-lance-produto">
-                  <button class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+                  <button onclick=postItem() class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
                   <input id="valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div>
               </div>
@@ -196,7 +217,7 @@
           </div>
           
         </div>
-    </section>
+    </section> -->
 
     <!-- <section class="section-produtos">
 

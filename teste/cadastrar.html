@@ -63,6 +63,7 @@
           <div  id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+              
               <div class="card-body">
   
                 <div class="input-group input-group-sm mb-3">
@@ -70,124 +71,122 @@
                   <input id="nomeDoItem" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 <div class="form-floating mb-3">
-                          <input type="date" class="form-control" id="nascimento" name="date"> 
+                          <input type="date" class="form-control" id="dataInicio" name="date"> 
                           <label for=" date" class="form-label">Data de início</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="nascimento" name="date"> 
+                </div>
+                <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="dataTermino" name="date"> 
                         <label for=" date" class="form-label">Data de término</label>
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance inicial</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                      <input id="lanceInicial" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
                       <input id="lanceMinimo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-  
-                    
+                </div>
+   
                 <div class="mb-3">
                   <label for="formFile" class="form-label">Escolha uma foto do produto</label>
                   <input class="form-control" type="file" id="formFile">
                 </div>
-  
               </div>
+
               <div class="card-footer">
                 <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
                 <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
                 <script type="text/javascript" src="./js/createcard.js"></script>  
-              </div>             
+              </div>            
             </div>
           </div>
   
-          <div id="arrematadosRow1" class="col">
+          <!-- <div  id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+              
               <div class="card-body">
   
                 <div class="input-group input-group-sm mb-3">
-                  <span class="input-group-text " id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
-                  <input id="teste-nome" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  <span class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
+                  <input id="nomeDoItem" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 <div class="form-floating mb-3">
-                          <input type="date" class="form-control" id="nascimento" name="date"> 
+                          <input type="date" class="form-control" id="dataInicio" name="date"> 
                           <label for=" date" class="form-label">Data de início</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="nascimento" name="date"> 
+                </div>
+                <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="dataTermino" name="date"> 
                         <label for=" date" class="form-label">Data de término</label>
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance inicial</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                      <input id="lanceInicial" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-  
-                    
+                      <input id="lanceMinimo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+   
                 <div class="mb-3">
                   <label for="formFile" class="form-label">Escolha uma foto do produto</label>
                   <input class="form-control" type="file" id="formFile">
                 </div>
-  
               </div>
+
               <div class="card-footer">
                 <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
                 <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
-                <script type="text/javascript" src="./js/createcard.js"></script> 
-              </div>
+                <script type="text/javascript" src="./js/createcard.js"></script>  
+              </div>            
             </div>
-          </div>
+          </div> -->
   
-          <div id="arrematadosRow1" class="col">
+          <!-- <div  id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
               <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+              
               <div class="card-body">
   
-                <div class="input-group input-group-sm mb-3" >
-                  <span  class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
-                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm nome-item">Nome do  Item</span>
+                  <input id="nomeDoItem" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
-                <script src="./js/getProductName.js"></script>
                 <div class="form-floating mb-3">
-                          <input type="date" class="form-control" id="nascimento" name="date"> 
+                          <input type="date" class="form-control" id="dataInicio" name="date"> 
                           <label for=" date" class="form-label">Data de início</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="nascimento" name="date"> 
+                </div>
+                <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="dataTermino" name="date"> 
                         <label for=" date" class="form-label">Data de término</label>
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance inicial</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                    <div class="input-group input-group-sm mb-3">
+                      <input id="lanceInicial" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Lance mínimo</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-  
-                    
+                      <input id="lanceMinimo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+   
                 <div class="mb-3">
                   <label for="formFile" class="form-label">Escolha uma foto do produto</label>
                   <input class="form-control" type="file" id="formFile">
                 </div>
-  
               </div>
+
               <div class="card-footer">
                 <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
                 <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
-                <script type="text/javascript" src="./js/createcard.js"></script> 
-              </div>
+                <script type="text/javascript" src="./js/createcard.js"></script>  
+              </div>            
             </div>
-          </div>
+          </div> -->
   
-      </section>
+    </section>
   
   
   

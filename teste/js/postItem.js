@@ -1,7 +1,12 @@
 async function postItem() {
   let nomeItem = document.getElementById('nomeDoItem').value;
   let lanceMinimo = document.getElementById('lanceMinimo').value;
-  let objeto = {'nome': nomeItem, lanceMinimo: lanceMinimo};
+  let dataInicio = document.getElementById('dataInicio').value;
+  let dataTermino = document.getElementById('dataTermino').value;
+  let lanceInicial = document.getElementById('lanceInicial').value;
+  
+
+  let objeto = {'nome': nomeItem, dataInicio : dataInicio,  dataTermino: dataTermino, lanceInicial: lanceInicial, lanceMinimo: lanceMinimo};
   let data = {"nome" : nomeItem, "valor": JSON.stringify(objeto)};
   console.log(data);
     

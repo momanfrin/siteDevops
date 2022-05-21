@@ -11,10 +11,11 @@
 }
 
 .imagem-container img {
-    height: 307px;
+    max-height: 307px;
     width: fit-content;
     display: flex;
     align-self: center;
+    max-width: 100%;
 }
 
 .imagem-container {

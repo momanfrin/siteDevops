@@ -1,7 +1,18 @@
-async function postItem() {
-  let nomeItem = document.getElementById('valorDoItem').value;
-   
-    let objeto = {'nome': nomeItem};
+async function postItem(nomeItem) {
+   let valorLance = document.getElementById(nomeItem+'_valorDoItem').value;
+  
+  let objeto = window.produtosLeilao.find((e)=>e.nome === nomeItem);
+  if( objeto.numeroLance >= 3){
+    alert("Leilão já arrematado!")
+    return;
+  }
+  if(objeto.lanceInicial + objeto.lanceMinimo > valorLance || objeto.ultimoLance > valorLance){
+    alert("Seu lance precisa ser maior!")
+    return;
+  }
+  objeto.ultimoLance = valorLance;
+  objeto.numeroLance = objeto.numeroLance ? objeto.numeroLance + 1 : 1;
+  
     let data = {"nome" : nomeItem, "valor": JSON.stringify(objeto)};
     console.log(data);
       

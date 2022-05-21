@@ -4,9 +4,10 @@ async function postItem() {
   let dataInicio = document.getElementById('dataInicio').value;
   let dataTermino = document.getElementById('dataTermino').value;
   let lanceInicial = document.getElementById('lanceInicial').value;
+  let enderecoImagem = document.getElementById('enderecoImagem').value;
   
-
-  let objeto = {'nome': nomeItem, dataInicio : dataInicio,  dataTermino: dataTermino, lanceInicial: lanceInicial, lanceMinimo: lanceMinimo};
+  enderecoImagem
+  let objeto = {'nome': nomeItem, dataInicio : dataInicio,  dataTermino: dataTermino, lanceInicial: lanceInicial, lanceMinimo: lanceMinimo, enderecoImagem};
   let data = {"nome" : nomeItem, "valor": JSON.stringify(objeto)};
   console.log(data);
     
@@ -25,4 +26,12 @@ async function postItem() {
         })
     })
     
+  }
+
+  mudarImagem = () =>{
+    
+    let enderecoImagem = document.getElementById('enderecoImagem').value;
+    let img = document.getElementById('imgNovoProduto');
+
+    img.setAttribute('src',enderecoImagem);
   }

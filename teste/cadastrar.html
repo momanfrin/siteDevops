@@ -62,7 +62,7 @@
   
           <div  id="arrematadosRow1" class="col">
             <div class="card h-100 imagem-container">
-              <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+              <img src="../teste/img/ponto.jpg" class="card-img-top" alt="..." id="imgNovoProduto">
               
               <div class="card-body">
   
@@ -87,17 +87,17 @@
                       <input id="lanceMinimo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
    
-                <div class="mb-3">
-                  <label for="formFile" class="form-label">Escolha uma foto do produto</label>
-                  <input class="form-control" type="file" id="formFile">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm nome-item">Endereço da imagem</span>
+                  <input onblur="mudarImagem()" id="enderecoImagem" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
               </div>
 
               <div class="card-footer">
                 <button onclick=postItem() onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar informações</button>
                 <script type="text/javascript" src="./js/postItem.js"></script>
-                <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
-                <script type="text/javascript" src="./js/createcard.js"></script>  
+                <!-- <button onclick=createHTML() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button>
+                <script type="text/javascript" src="./js/createcard.js"></script>   -->
               </div>            
             </div>
           </div>

@@ -13,21 +13,21 @@ async function getProduct() {
         data = data.json().then(data =>{
             console.log(data)
             let response = data.body;// Items
+            window.produtosLeilao = [];
             response.map((e)=>{
-                if(e.nome === 'cabrito'){
                     let dadosItem = JSON.parse(e.valor);
-                    createHTML(e.nome, dadosItem.lanceMinimo);
-                }
+                    window.produtosLeilao.push(dadosItem);
+                    createHTML(e.nome, dadosItem.dataInicio, dadosItem.dataTermino, dadosItem.lanceInicial, dadosItem.lanceMinimo, dadosItem.enderecoImagem);
             });
         })
     })
 
 }
-function createHTML(nome, dataInicio, dataTermino, lanceInicial, lanceMinimo){
+function createHTML(nome, dataInicio, dataTermino, lanceInicial, lanceMinimo, imagem){
     document.getElementById(`arrematadosRow`)
         .insertAdjacentHTML(`afterbegin`,`<div class="col">
         <div class="card h-100 imagem-container">
-            <img src="../teste/img/ponto.jpg" class="card-img-top" alt="...">
+            <img src="${imagem}" class="card-img-top" alt="...">
           <div class="card-body">
 
             <h5 class="card-title">${nome}</h5>
@@ -37,8 +37,12 @@ function createHTML(nome, dataInicio, dataTermino, lanceInicial, lanceMinimo){
           </div>
 
           <div class="card-footer">
-           <button onclick=postItem() required class="btn btn-primary comprar"  >Cadastrar item para leilão</button> 
+          <button href="" onclick="postItem('${nome}')" class="btn btn-primary comprar">Dar um lance</button>
+          <div class="input-group mb-3 valor-lance-produto">
+            <button  class="btn btn-primary comprar" type="button" id="button-addon1">Valor</button>
+            <input id="${nome}_valorDoItem" type="text" class="form-control" placeholder="R$" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
+        </div>
         </div>
         `);
 }

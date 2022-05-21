@@ -2,6 +2,11 @@ async function postItem(nomeItem) {
    let valorLance = document.getElementById(nomeItem+'_valorDoItem').value;
   
   let objeto = window.produtosLeilao.find((e)=>e.nome === nomeItem);
+  let dataFinal = new Date(Date.parse(objeto.dataTermino + 'T00:00:00'))
+  if(dataFinal < new Date()){
+    alert("Leilão já acabou!")
+    return;
+  }
   if( objeto.numeroLance >= 3){
     alert("Leilão já arrematado!")
     return;

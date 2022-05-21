@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../teste/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="../teste/js/getLeilaoArrematado.js"></script>
     <title>Leilão</title>
   </head>
 
-  <body id="body">
+  <body id="body" onload="getLeiloesArrematados()">
 
       <header>       
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -174,8 +174,8 @@
 
     <section id="arrematados" class="section-produtos">
       <h1 id="leilaoarrematados" class="como-funciona">Leilões Arrematados</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
-            <div class="col">
+        <div id="leilaoArrematadosRow" class="row row-cols-1 row-cols-md-3 g-4 produtos">
+            <!-- <div class="col">
               <div class="card h-100 imagem-container">
                 <img src="../teste/img/adega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -186,8 +186,8 @@
                   <small class="text-muted">Lance final: R$ 699,00</small>
                 </div>
               </div>
-            </div>
-            <div class="col">
+            </div> -->
+            <!-- <div class="col">
               <div class="card h-100 imagem-container">
                 <img src="../teste/img/anel.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -211,10 +211,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
     </section>
 
-    <section class="section-produtos">
+    <!-- <section class="section-produtos">
         <div class="row row-cols-1 row-cols-md-3 g-4 produtos">
             <div class="col">
               <div class="card h-100 imagem-container">
@@ -254,7 +254,7 @@
             </div>
             
           </div>
-    </section>
+    </section> -->
 
     
  

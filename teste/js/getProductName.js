@@ -17,7 +17,10 @@ async function getProduct() {
             response.map((e)=>{
                     let dadosItem = JSON.parse(e.valor);
                     window.produtosLeilao.push(dadosItem);
-                    createHTML(e.nome, dadosItem.dataInicio, dadosItem.dataTermino, dadosItem.lanceInicial, dadosItem.lanceMinimo, dadosItem.enderecoImagem);
+                    let dataFinal = new Date(Date.parse(dadosItem.dataTermino + 'T00:00:00'))
+                    if(!(dataFinal < new Date() || dadosItem.numeroLance >= 3)){
+                      createHTML(e.nome, dadosItem.dataInicio, dadosItem.dataTermino, dadosItem.lanceInicial, dadosItem.lanceMinimo, dadosItem.enderecoImagem);
+                    }
             });
         })
     })
